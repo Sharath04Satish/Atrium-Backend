@@ -129,7 +129,7 @@ for path in records:
 
         # Save to CSV file.
         savedata = np.array(list(beats[:]), dtype=np.float)
-        outfn = 'data_ecg3/' + fn +'_'+ chname + '.csv'
+        outfn = 'data_ecg/' + fn +'_'+ chname + '.csv'
         print('    Generating ', outfn)
         with open(outfn, "wb") as fin:
             np.savetxt(fin, savedata, delimiter=",", fmt='%f')
